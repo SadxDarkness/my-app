@@ -1,10 +1,10 @@
+import React from 'react';
 import './header.css';
 const Header = () => {
     return (
         <div className ="header">
             <header>
-                <a href=""><div className="logo"><img className = "logotip"/></div></a>
-                <button>Связаться со мной</button>
+                <div className="logo"><img src="" alt=""/></div>
             </header>
         </div>
     );

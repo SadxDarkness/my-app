@@ -1,13 +1,14 @@
+import React from 'react';
 import "./menu.css"
 const Menu = () => {
     return (
         <div className = "menu">
           <ul>
-            <li>Profile</li>
-            <li>News</li>
-            <li>Messages</li>
-            <li>Music</li>
-            <li>Settings</li>
+            <a href=""><li>Profile</li></a>
+            <a href=""><li>News</li></a>
+            <a href=""><li>Messages</li></a>
+            <a href=""><li>Music</li></a>
+            <a href=""><li>Settings</li></a>
           </ul>
           </div> 
     );

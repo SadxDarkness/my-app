@@ -1,4 +1,5 @@
-content {
-  background-color: red;
+.content {
+  width: 90%;
+  background-color: blue;
 }
 /*# sourceMappingURL=content.css.map */
