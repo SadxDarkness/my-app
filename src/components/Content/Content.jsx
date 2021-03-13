@@ -5,8 +5,8 @@ import Dialogs from '../Dialogs/Dialogs';
 const Content = () => {
     return (
         <div className = "content">
-            {/*<Profile />*/}
-            <Dialogs/>
+            <Profile />
+            <Dialogs age = "24"/>
         </div>
         
     );

@@ -3,10 +3,11 @@ body {
 }
 
 .container {
+  background-color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
   width: 90%;
+  margin: auto;
 }
 /*# sourceMappingURL=App.css.map */
