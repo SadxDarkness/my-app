@@ -1,16 +1,12 @@
 import React from 'react';
-import Post from "../MyPosts/Posts/Post";
 import "./content.css";
-import MyPosts from '../MyPosts/MyPosts';
+import Profile from "../Profile/Profile.jsx"
+import Dialogs from '../Dialogs/Dialogs';
 const Content = () => {
     return (
         <div className = "content">
-                <div><img src="https://enjoy-the-netherlands.ru/images/paginas/1522400342_kinderdijk-04-1400x300.jpg" alt=""/></div>
-                <div>
-                    ava + opisanie
-                </div>
-                <MyPosts/>
-                <Post />
+            {/*<Profile />*/}
+            <Dialogs/>
         </div>
         
     );

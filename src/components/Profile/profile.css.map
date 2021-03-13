@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "MyPosts.sass"
+        "profile.sass"
     ],
     "names": [],
-    "file": "MyPosts.css"
+    "file": "profile.css"
 }
