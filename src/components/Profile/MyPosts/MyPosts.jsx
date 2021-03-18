@@ -1,11 +1,8 @@
 import React from 'react';
 import "./MyPosts.css";
 import Post from "./Posts/Post.jsx";
-const MyPosts = () => {
-    let postData = [
-        {id: 1, message: "Hi, all ok?", CountLikes: 12},
-        {id: 2, message: "First post", CountLikes: 12}
-            ];
+const MyPosts = (props) => {
+            let postsElement = props.posts.map (p => <Post postMessage = {p.message} likes = {p.CountLikes}/>)
     return (
         <div className = "MyPosts">
             <div>
@@ -16,8 +13,7 @@ const MyPosts = () => {
                         <button>Add Post</button>
                         </div>
                     </div>
-                    <Post postMessage = {postData[0].message} likes = {postData[0].CountLikes}/>
-                    <Post postMessage = {postData[1].message} likes = {postData[1].CountLikes}/>
+                        {postsElement}
             </div>
         </div>
     );

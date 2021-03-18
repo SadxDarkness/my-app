@@ -5,15 +5,15 @@ import { Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Profile from "./components/Profile/Profile.jsx";
 import Dialogs from './components/Dialogs/Dialogs.jsx';
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
     <div className="App">
       <Header/>
       <div className="container">
         <Menu/>
-        <Route path = "/profile" component = {Profile}/>
-        <Route path = "/dialogs"component = {Dialogs}/>
+        <Route path = "/profile" render = {() => <Profile />}/>
+        <Route path = "/dialogs" render = {() => <Dialogs posts = {props.posts} dialogs = {props.dialogs} messages = {props.messages}/>}/>
       </div>
     </div>
     </BrowserRouter>
