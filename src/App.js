@@ -12,8 +12,8 @@ function App(props) {
       <Header/>
       <div className="container">
         <Menu/>
-        <Route path = "/profile" render = {() => <Profile />}/>
-        <Route path = "/dialogs" render = {() => <Dialogs posts = {props.posts} dialogs = {props.dialogs} messages = {props.messages}/>}/>
+        <Route path = "/profile" render = {() => <Profile state = {props.state.profilePage }/>}/>
+        <Route path = "/dialogs" render = {() => <Dialogs state = {props.state.messagesPage }/>}/>
       </div>
     </div>
     </BrowserRouter>

@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "dialogitem.sass"
+        "dialogItem.sass"
     ],
     "names": [],
-    "file": "dialogitem.css"
+    "file": "dialogItem.css"
 }
